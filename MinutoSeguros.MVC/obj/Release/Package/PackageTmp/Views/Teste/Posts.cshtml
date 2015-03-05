@@ -1,0 +1,43 @@
+﻿@using System.Text
+@model IEnumerable<MinutoSeguros.Lib.Class.Post>
+
+@{
+    ViewBag.Title = "Posts";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Data de Publicação
+        </th>
+        <th>
+            Título
+        </th>
+        <th>
+            Resumo
+        </th>
+        <th>
+            Quantidade de palavras
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.DataPublicacao
+        </td>
+        <td>
+            <a href="@item.Link" target="_blank">@item.Titulo</a>
+        </td>
+        <td>
+            @Html.Raw(item.Resumo.Substring(0, item.Resumo.IndexOf("&#8230;", System.StringComparison.Ordinal) + 7))
+        </td>
+        <td>
+            @item.TotalDePalavras()
+        </td>
+    </tr>
+}
+
+</table>

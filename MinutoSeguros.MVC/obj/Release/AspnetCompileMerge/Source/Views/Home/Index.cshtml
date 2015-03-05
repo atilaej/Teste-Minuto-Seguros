@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Teste Minuto Seguros";
+}
+
+
+
+<article>
+    <h2>
+        Requisitos
+    </h2>
+
+    <p>Você deverá criar um programa para obter automaticamente o conteúdo dos dez últimos tópicos publicados no blog da Minuto Seguros. Abaixo segue um link para auxiliá-lo nesse trabalho:</p>
+
+    <p>
+        <a href="http://www.minutoseguros.com.br/blog/feed/">http://www.minutoseguros.com.br/blog/feed/</a>
+    </p>
+
+    <p>O seu programa deverá avaliar quais as dez principais palavras abordadas nesses tópicos e qual o número de vezes que elas aparecem. Também deverá exibir a quantidade de palavras por tópico. Além disso, deverão ser removidos os artigos e preposições nessa análise.</p>
+
+    <p>A linguagem que mais utilizamos é C#. Porém, você poderá realizar o exercício na linguagem de programação de sua preferência.</p>
+
+</article>
+<hr/>
+<article>
+    <h2>
+        Considerações
+    </h2>
+
+    <p>
+        Foram retiradas dos textos todas as tag html, portando toda a informação contida nelas não foi computada
+        , como por exemplo os textos dentro dos atributos "title".
+    </p>
+
+    <p>
+        Além do texto dentro do conteúdo, também foram contabilizados os texto do título e do resumo.
+    </p>
+
+    <p>
+        Conjunções como "e", por exemplo, foram consideradas.
+    </p>
+
+    <p>
+        Foram retirados do texto as seguintes palavras:
+
+        <dl>
+            <dt>Artigos Definidos</dt>
+            <dd>
+                <ul>
+                    <li>o</li>
+                    <li>a</li>
+                    <li>os</li>
+                    <li>as</li>
+                </ul>
+            </dd>
+            <dt>Artigos Indefinidos</dt>
+            <dd>
+                <ul>
+                    <li>um</li>
+                    <li>uma</li>
+                    <li>uns</li>
+                    <li>umas</li>
+                </ul>
+            </dd>
+            <dt>Preposições Essenciais</dt>
+            <dd>
+                <ul>
+                    <li>a</li>
+                    <li>ante</li>
+                    <li>após</li>
+                    <li>até</li>
+                    <li>com</li>
+                    <li>contra</li>
+                    <li>de</li>
+                    <li>desde</li>
+                    <li>em</li>
+                    <li>entre</li>
+                    <li>para</li>
+                    <li>per</li>
+                    <li>perante</li>
+                    <li>por</li>
+                    <li>sem</li>
+                    <li>sob</li>
+                    <li>sobre</li>
+                    <li>trás</li>
+                </ul>
+            </dd>
+            <dt>Combinação de artigo e preposições</dt>
+            <dd>
+                <ul>
+                    <li>ao</li>
+                    <li>aos</li>
+                    <li>à</li>
+                    <li>às</li>
+                    <li>de</li>
+                    <li>do</li>
+                    <li>dos</li>
+                    <li>da</li>
+                    <li>das</li>
+                    <li>dum</li>
+                    <li>duns</li>
+                    <li>duma</li>
+                    <li>dumas</li>
+                    <li>em</li>
+                    <li>no</li>
+                    <li>nos</li>
+                    <li>na</li>
+                    <li>nas</li>
+                    <li>num</li>
+                    <li>nuns</li>
+                    <li>numa</li>
+                    <li>numas</li>
+                    <li>por</li>
+                    <li>per</li>
+                    <li>pelo</li>
+                    <li>pelos</li>
+                    <li>pela</li>
+                    <li>pelas</li>
+                </ul>
+            </dd>
+        </dl>
+
+</article>

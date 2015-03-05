@@ -1,0 +1,4 @@
+D:\_Atila\Projetos\ESTUDOS\MinutoSeguros\MinutoSeguros.Lib\bin\Release\MinutoSeguros.Lib.dll
+D:\_Atila\Projetos\ESTUDOS\MinutoSeguros\MinutoSeguros.Lib\bin\Release\MinutoSeguros.Lib.pdb
+D:\_Atila\Projetos\ESTUDOS\MinutoSeguros\MinutoSeguros.Lib\obj\Release\MinutoSeguros.Lib.dll
+D:\_Atila\Projetos\ESTUDOS\MinutoSeguros\MinutoSeguros.Lib\obj\Release\MinutoSeguros.Lib.pdb
